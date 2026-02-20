@@ -1,0 +1,529 @@
+{
+  "kind": "build_request",
+  "title": "Build Apple-inspired minimal e-commerce website",
+  "projectName": "Premium Store",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create Landing Page with Hero Section featuring large product hero image, headline 'Designed For The Future.', subtext 'Precision. Performance. Perfection.', Shop Now button, Learn More button, and smooth scroll animation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Hero Section: Large product hero image (premium 3D render or studio product shot)",
+          "Big bold headline: \"Designed For The Future.\"",
+          "Subtext: \"Precision. Performance. Perfection.\"",
+          "Two buttons: • Shop Now • Learn More",
+          "Add smooth scroll animation."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays large product image",
+        "Headline and subtext are prominently displayed",
+        "Both Shop Now and Learn More buttons are functional and styled",
+        "Smooth scroll animation triggers on page load or scroll"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add Featured Products section below hero with 3-4 large product cards displaying product images, names, and prices",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Featured Products (3–4 large product cards)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "3-4 product cards are displayed in a clean grid",
+        "Each card shows product image, name, and price",
+        "Cards have hover effects consistent with Apple design"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add Why Choose Us section with 3 minimal icons and short descriptive text for each benefit",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Why Choose Us (3 minimal icons with short text)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three benefit items are displayed with icons",
+        "Each item has short, clear text",
+        "Icons are minimal and consistent with Apple aesthetic"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add Product Showcase section with large left-right layout alternating product images and descriptions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Product Showcase (large left-right layout with big images)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Large images alternate between left and right sides",
+        "Product descriptions complement each image",
+        "Layout feels spacious and premium"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add Customer Reviews section with minimal review cards displaying customer feedback",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Customer Reviews (minimal cards)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Review cards display customer quotes",
+        "Cards are minimal and clean",
+        "Reviews are easy to read"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add Newsletter Signup section with email input and subscribe button",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Newsletter Signup"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Email input field is clearly visible",
+        "Subscribe button is prominently placed",
+        "Section follows minimal design principles"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add Clean Footer with navigation links, social media icons, and policy links",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Clean Footer (links, socials, policies)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains organized navigation links",
+        "Social media icons are present and styled",
+        "Policy links (Privacy, Terms) are included",
+        "Footer design is minimal and clean"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create Product Listing Page with 4-column grid layout on desktop and 2-column on mobile, displaying product cards with images, names, prices, Add to Cart button, and wishlist heart icon",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Grid layout (4 columns desktop / 2 mobile)",
+          "Add to Cart button",
+          "Wishlist heart icon"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Desktop displays 4 columns of products",
+        "Mobile displays 2 columns of products",
+        "Each product card shows image, name, price, Add to Cart button, and wishlist icon",
+        "Grid is perfectly aligned"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add Filters sidebar to Product Listing Page with Price, Category, and Rating filter options",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Filters sidebar (Price, Category, Rating)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Sidebar contains Price, Category, and Rating filters",
+        "Filters are functional and update product display",
+        "Sidebar is collapsible on mobile"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add Sort dropdown to Product Listing Page with sorting options for products",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sort dropdown"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Dropdown includes multiple sort options",
+        "Sorting updates product order",
+        "Dropdown is styled consistently with Apple design"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement hover product image zoom effect on Product Listing Page cards",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Hover product image zoom"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product images smoothly zoom on hover",
+        "Zoom effect is subtle and smooth",
+        "Effect works consistently across all product cards"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Create Product Detail Page with large left-side product gallery supporting multiple images",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Large left product gallery (multiple images)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery displays multiple product images",
+        "Main image is large and prominent on the left",
+        "Thumbnail images allow switching between views",
+        "Gallery is responsive"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add right-side product information panel to Product Detail Page with product name, price, short description, size/color selectors, quantity selector, Add to Cart button, and Buy Now button",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Right side: Product name Price Short description Size/Color selectors Quantity selector Add to Cart button Buy Now button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Product name and price are clearly displayed",
+        "Description is concise and readable",
+        "Size and color selectors are functional",
+        "Quantity can be adjusted",
+        "Both action buttons are prominent and functional"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Add tabbed product details section below product info on Product Detail Page with Description, Specs, and Reviews tabs",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Product details tabs (Description / Specs / Reviews)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three tabs are visible: Description, Specs, Reviews",
+        "Tab switching is smooth and functional",
+        "Each tab displays relevant content",
+        "Tab design is minimal and clean"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Create Cart Page with product list showing images, quantity controls, remove option, and price summary displaying subtotal, shipping, total, and checkout button",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Product list with image Quantity control Remove option Price summary Subtotal Shipping Total Checkout button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each cart item displays product image and details",
+        "Quantity can be adjusted per item",
+        "Items can be removed from cart",
+        "Price summary shows subtotal, shipping, and total",
+        "Checkout button is prominent"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Create Checkout Page UI with shipping address form, contact info section, payment method selection (Card/UPI/PayPal UI mock), order summary panel, and Place Order button with secure, trustworthy design",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Shipping address form Contact info Payment method selection (Card / UPI / PayPal UI mock) Order summary panel Place Order button",
+          "Design must look secure and trustworthy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Shipping form collects all necessary address fields",
+        "Contact info section is clear",
+        "Payment method options are displayed (UI only)",
+        "Order summary shows items and totals",
+        "Place Order button is prominent and trustworthy",
+        "Overall design conveys security"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Create Login Page with minimal center card containing email input, password input, remember me checkbox, and forgot password link",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Login Page: Minimal center card Email + Password Remember me Forgot password"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Login form is centered in a minimal card",
+        "Email and password fields are present",
+        "Remember me checkbox is functional",
+        "Forgot password link is visible",
+        "Design is clean and minimal"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Create Register Page with minimal center card containing full name, email, password, and confirm password fields",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Register Page: Full name Email Password Confirm password"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Registration form is centered in a minimal card",
+        "All four fields are present and functional",
+        "Password confirmation validation works",
+        "Design matches login page aesthetic"
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Create Account Dashboard with sidebar navigation (Profile, Orders, Wishlist, Settings, Logout) and main panel displaying order history cards, account details editing, and saved addresses",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sidebar: Profile Orders Wishlist Settings Logout",
+          "Main panel: Order history cards Account details editing Saved addresses"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Sidebar contains all five navigation items",
+        "Main panel switches content based on sidebar selection",
+        "Order history displays as cards",
+        "Account details can be edited",
+        "Saved addresses are manageable",
+        "Dashboard is clean and organized"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Implement mobile-specific optimizations: collapsible navbar, bottom sticky add-to-cart on product page, larger touch-friendly buttons, clean spacing, and optimized layouts (not scaled desktop)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Have collapsible navbar",
+          "Bottom sticky add-to-cart on product page",
+          "Larger touch-friendly buttons",
+          "Clean spacing",
+          "No cramped design",
+          "Optimized layout (not scaled desktop)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Mobile navbar collapses into hamburger menu",
+        "Product detail page has sticky add-to-cart at bottom on mobile",
+        "All buttons are larger and touch-friendly on mobile",
+        "Mobile layouts are optimized, not just scaled",
+        "Spacing is generous on mobile",
+        "No elements feel cramped"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Apply Apple-inspired design system: clean white and soft gray base colors, Inter or SF Pro style typography, maximum 2-3 colors, large spacing, rounded corners, soft shadows, smooth subtle animations, perfect grid alignment, lots of white space, no heavy gradients, no dark neon effects, no clutter, no loud colors",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Clean white and soft gray base",
+          "Premium typography",
+          "Large spacing",
+          "Use Inter or SF Pro style typography",
+          "Maximum 2–3 colors",
+          "Lots of white space",
+          "Smooth subtle animations",
+          "Rounded corners",
+          "Soft shadows",
+          "Perfect grid alignment"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses white and soft gray as base",
+        "Typography uses Inter or SF Pro font family",
+        "Maximum of 2-3 colors used throughout",
+        "Generous spacing between all elements",
+        "All corners are rounded consistently",
+        "Shadows are soft and subtle",
+        "Grid alignment is perfect across all layouts",
+        "Animations are smooth and subtle",
+        "Design feels spacious with ample white space",
+        "No gradients, neon effects, or loud colors present"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Ensure full responsive design with separate optimized layouts for desktop and mobile (not just scaled down), maintaining premium feel across all breakpoints",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "The website must be fully responsive.",
+          "Desktop and mobile must have separate optimized layouts (not just scaled down)."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages are fully responsive",
+        "Desktop layouts are optimized for large screens",
+        "Mobile layouts are uniquely designed, not scaled",
+        "Tablet breakpoints are handled appropriately",
+        "Premium feel is maintained on all devices"
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Implement smooth hover effects and scroll animations throughout the site to create fluid, premium interactions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Smooth hover and scroll animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All interactive elements have smooth hover effects",
+        "Scroll animations are subtle and enhance experience",
+        "Animations feel natural and not distracting",
+        "Performance remains smooth with animations enabled"
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "text": "Organize code with clean structure and well-organized components following React best practices",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Clean structured code.",
+          "Well-organized components."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Components are properly separated and reusable",
+        "File structure is logical and maintainable",
+        "Code follows React best practices",
+        "Component naming is clear and consistent"
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend only - no backend logic",
+    "No heavy gradients",
+    "No dark neon effects",
+    "No clutter",
+    "No loud colors",
+    "Maximum 2-3 colors",
+    "Desktop and mobile must have separate optimized layouts (not scaled)",
+    "Must feel like a billion-dollar brand store with human-made feel (NOT generic AI template)"
+  ],
+  "nonGoals": [
+    "Backend functionality or data persistence",
+    "Actual payment processing",
+    "User authentication logic",
+    "Database integration",
+    "API integrations",
+    "Dark mode theme",
+    "Colorful or loud design elements",
+    "Generic AI template patterns"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Premium headphones on white background with soft shadow, studio product shot (hero-headphones.dim_2400x1600.png)",
+      "Minimal smartwatch on white background with soft shadow, studio product shot (product-smartwatch.dim_2000x2000.png)",
+      "Premium wireless earbuds on white background with soft shadow, studio product shot (product-earbuds.dim_2000x2000.png)",
+      "Minimalist desk lamp on white background with soft shadow, studio product shot (product-desk-lamp.dim_2000x2000.png)",
+      "Premium tech accessories on white background with soft shadow, studio product shot (product-accessories.dim_2000x2000.png)",
+      "Clean minimal icon for fast shipping, simple line art (icon-shipping.dim_128x128.png)",
+      "Clean minimal icon for quality guarantee, simple line art (icon-quality.dim_128x128.png)",
+      "Clean minimal icon for customer support, simple line art (icon-support.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

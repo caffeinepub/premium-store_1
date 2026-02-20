@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Apple-inspired minimal e-commerce website with premium design, clean aesthetics, and full responsive layouts for desktop and mobile",
+  "architectural_notes": [
+    "Apple-inspired minimal design: clean white/soft gray base, premium typography (Inter or SF Pro), large spacing, rounded corners, soft shadows",
+    "Fully responsive with separate desktop and mobile layouts (not scaled)",
+    "Smooth subtle animations for scroll and hover effects",
+    "Frontend only, no backend logic",
+    "Component-based architecture with clean, well-organized code",
+    "Maximum 2-3 colors, lots of white space, no heavy gradients or clutter"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Premium headphones on white background with soft shadow, studio product shot (hero-headphones.dim_2400x1600.png)\n- Minimal smartwatch on white background with soft shadow, studio product shot (product-smartwatch.dim_2000x2000.png)\n- Premium wireless earbuds on white background with soft shadow, studio product shot (product-earbuds.dim_2000x2000.png)\n- Minimalist desk lamp on white background with soft shadow, studio product shot (product-desk-lamp.dim_2000x2000.png)\n- Premium tech accessories on white background with soft shadow, studio product shot (product-accessories.dim_2000x2000.png)\n- Clean minimal icon for fast shipping, simple line art (icon-shipping.dim_128x128.png)\n- Clean minimal icon for quality guarantee, simple line art (icon-quality.dim_128x128.png)\n- Clean minimal icon for customer support, simple line art (icon-support.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-landing-page-with-hero-section-featuring-large-product-hero-image-headline-designed-for-the-future-subtext-precision-performance-perfection-shop-now-button-learn-more-button-and-smooth-scroll-animation",
+      "title": "Create Landing Page with Hero Section featuring large product hero image, headline 'Designed For The Future.', subtext 'Precision. Performance. Perfection.', Shop Now button, Learn More button, and smooth scroll animation",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-featured-products-section-below-hero-with-3-4-large-product-cards-displaying-product-images-names-and-prices",
+      "title": "Add Featured Products section below hero with 3-4 large product cards displaying product images, names, and prices",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-why-choose-us-section-with-3-minimal-icons-and-short-descriptive-text-for-each-benefit",
+      "title": "Add Why Choose Us section with 3 minimal icons and short descriptive text for each benefit",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-product-showcase-section-with-large-left-right-layout-alternating-product-images-and-descriptions",
+      "title": "Add Product Showcase section with large left-right layout alternating product images and descriptions",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-customer-reviews-section-with-minimal-review-cards-displaying-customer-feedback",
+      "title": "Add Customer Reviews section with minimal review cards displaying customer feedback",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-newsletter-signup-section-with-email-input-and-subscribe-button",
+      "title": "Add Newsletter Signup section with email input and subscribe button",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-clean-footer-with-navigation-links-social-media-icons-and-policy-links",
+      "title": "Add Clean Footer with navigation links, social media icons, and policy links",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-product-listing-page-with-4-column-grid-layout-on-desktop-and-2-column-on-mobile-displaying-product-cards-with-images-names-prices-add-to-cart-button-and-wishlist-heart-icon",
+      "title": "Create Product Listing Page with 4-column grid layout on desktop and 2-column on mobile, displaying product cards with images, names, prices, Add to Cart button, and wishlist heart icon",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-filters-sidebar-to-product-listing-page-with-price-category-and-rating-filter-options",
+      "title": "Add Filters sidebar to Product Listing Page with Price, Category, and Rating filter options",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-sort-dropdown-to-product-listing-page-with-sorting-options-for-products",
+      "title": "Add Sort dropdown to Product Listing Page with sorting options for products",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-hover-product-image-zoom-effect-on-product-listing-page-cards",
+      "title": "Implement hover product image zoom effect on Product Listing Page cards",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-product-detail-page-with-large-left-side-product-gallery-supporting-multiple-images",
+      "title": "Create Product Detail Page with large left-side product gallery supporting multiple images",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-right-side-product-information-panel-to-product-detail-page-with-product-name-price-short-description-size-color-selectors-quantity-selector-add-to-cart-button-and-buy-now-button",
+      "title": "Add right-side product information panel to Product Detail Page with product name, price, short description, size/color selectors, quantity selector, Add to Cart button, and Buy Now button",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-tabbed-product-details-section-below-product-info-on-product-detail-page-with-description-specs-and-reviews-tabs",
+      "title": "Add tabbed product details section below product info on Product Detail Page with Description, Specs, and Reviews tabs",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-cart-page-with-product-list-showing-images-quantity-controls-remove-option-and-price-summary-displaying-subtotal-shipping-total-and-checkout-button",
+      "title": "Create Cart Page with product list showing images, quantity controls, remove option, and price summary displaying subtotal, shipping, total, and checkout button",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-checkout-page-ui-with-shipping-address-form-contact-info-section-payment-method-selection-card-upi-paypal-ui-mock-order-summary-panel-and-place-order-button-with-secure-trustworthy-design",
+      "title": "Create Checkout Page UI with shipping address form, contact info section, payment method selection (Card/UPI/PayPal UI mock), order summary panel, and Place Order button with secure, trustworthy design",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-login-page-with-minimal-center-card-containing-email-input-password-input-remember-me-checkbox-and-forgot-password-link",
+      "title": "Create Login Page with minimal center card containing email input, password input, remember me checkbox, and forgot password link",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-register-page-with-minimal-center-card-containing-full-name-email-password-and-confirm-password-fields",
+      "title": "Create Register Page with minimal center card containing full name, email, password, and confirm password fields",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-account-dashboard-with-sidebar-navigation-profile-orders-wishlist-settings-logout-and-main-panel-displaying-order-history-cards-account-details-editing-and-saved-addresses",
+      "title": "Create Account Dashboard with sidebar navigation (Profile, Orders, Wishlist, Settings, Logout) and main panel displaying order history cards, account details editing, and saved addresses",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-mobile-specific-optimizations-collapsible-navbar-bottom-sticky-add-to-cart-on-product-page-larger-touch-friendly-buttons-clean-spacing-and-optimized-layouts-not-scaled-desktop",
+      "title": "Implement mobile-specific optimizations: collapsible navbar, bottom sticky add-to-cart on product page, larger touch-friendly buttons, clean spacing, and optimized layouts (not scaled desktop)",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-apple-inspired-design-system-clean-white-and-soft-gray-base-colors-inter-or-sf-pro-style-typography-maximum-2-3-colors-large-spacing-rounded-corners-soft-shadows-smooth-subtle-animations-perfect-grid-alignment-lots-of-white-space-no-heavy-gradients-no-dark-neon-effects-no-clutter-no-loud-colors",
+      "title": "Apply Apple-inspired design system: clean white and soft gray base colors, Inter or SF Pro style typography, maximum 2-3 colors, large spacing, rounded corners, soft shadows, smooth subtle animations, perfect grid alignment, lots of white space, no heavy gradients, no dark neon effects, no clutter, no loud colors",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-full-responsive-design-with-separate-optimized-layouts-for-desktop-and-mobile-not-just-scaled-down-maintaining-premium-feel-across-all-breakpoints",
+      "title": "Ensure full responsive design with separate optimized layouts for desktop and mobile (not just scaled down), maintaining premium feel across all breakpoints",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-smooth-hover-effects-and-scroll-animations-throughout-the-site-to-create-fluid-premium-interactions",
+      "title": "Implement smooth hover effects and scroll animations throughout the site to create fluid, premium interactions",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-organize-code-with-clean-structure-and-well-organized-components-following-react-best-practices",
+      "title": "Organize code with clean structure and well-organized components following React best practices",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Landing page with hero section, featured products, why choose us, product showcase, reviews, newsletter, and footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Product listing page with grid layout, filters sidebar, sort dropdown, hover zoom, add to cart, and wishlist",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Product detail page with gallery, product info, size/color selectors, quantity control, add to cart, buy now, and detail tabs",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Cart page with product list, quantity control, remove option, price summary, and checkout button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Checkout page UI with shipping form, contact info, payment method selection, order summary, and place order button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Authentication pages: login with email/password/remember me/forgot password, and register with full name/email/password/confirm",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Account dashboard with sidebar navigation and panels for order history, account details, and saved addresses",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Mobile optimizations: collapsible navbar, bottom sticky add-to-cart, larger touch buttons, clean spacing, optimized layouts",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Premium Store",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

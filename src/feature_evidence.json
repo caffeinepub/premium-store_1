@@ -1,0 +1,463 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-landing-page-with-hero-section-featuring-large-product-hero-image-headline-designed-for-the-future-subtext-precision-performance-perfection-shop-now-button-learn-more-button-and-smooth-scroll-animation",
+      "featureTitle": "Create Landing Page with Hero Section featuring large product hero image, headline 'Designed For The Future.', subtext 'Precision. Performance. Perfection.', Shop Now button, Learn More button, and smooth scroll animation",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-featured-products-section-below-hero-with-3-4-large-product-cards-displaying-product-images-names-and-prices",
+      "featureTitle": "Add Featured Products section below hero with 3-4 large product cards displaying product images, names, and prices",
+      "files": [
+        "frontend/src/components/FeaturedProducts.tsx",
+        "frontend/src/components/ProductCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-why-choose-us-section-with-3-minimal-icons-and-short-descriptive-text-for-each-benefit",
+      "featureTitle": "Add Why Choose Us section with 3 minimal icons and short descriptive text for each benefit",
+      "files": [
+        "frontend/src/components/WhyChooseUs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-product-showcase-section-with-large-left-right-layout-alternating-product-images-and-descriptions",
+      "featureTitle": "Add Product Showcase section with large left-right layout alternating product images and descriptions",
+      "files": [
+        "frontend/src/components/ProductShowcase.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-customer-reviews-section-with-minimal-review-cards-displaying-customer-feedback",
+      "featureTitle": "Add Customer Reviews section with minimal review cards displaying customer feedback",
+      "files": [
+        "frontend/src/components/CustomerReviews.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-newsletter-signup-section-with-email-input-and-subscribe-button",
+      "featureTitle": "Add Newsletter Signup section with email input and subscribe button",
+      "files": [
+        "frontend/src/components/NewsletterSignup.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-clean-footer-with-navigation-links-social-media-icons-and-policy-links",
+      "featureTitle": "Add Clean Footer with navigation links, social media icons, and policy links",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Layout.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-product-listing-page-with-4-column-grid-layout-on-desktop-and-2-column-on-mobile-displaying-product-cards-with-images-names-prices-add-to-cart-button-and-wishlist-heart-icon",
+      "featureTitle": "Create Product Listing Page with 4-column grid layout on desktop and 2-column on mobile, displaying product cards with images, names, prices, Add to Cart button, and wishlist heart icon",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ProductGridCard.tsx",
+        "frontend/src/pages/ProductListingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-filters-sidebar-to-product-listing-page-with-price-category-and-rating-filter-options",
+      "featureTitle": "Add Filters sidebar to Product Listing Page with Price, Category, and Rating filter options",
+      "files": [
+        "frontend/src/components/FiltersSidebar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-sort-dropdown-to-product-listing-page-with-sorting-options-for-products",
+      "featureTitle": "Add Sort dropdown to Product Listing Page with sorting options for products",
+      "files": [
+        "frontend/src/components/SortDropdown.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-hover-product-image-zoom-effect-on-product-listing-page-cards",
+      "featureTitle": "Implement hover product image zoom effect on Product Listing Page cards",
+      "files": [
+        "frontend/src/components/ProductGridCard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-product-detail-page-with-large-left-side-product-gallery-supporting-multiple-images",
+      "featureTitle": "Create Product Detail Page with large left-side product gallery supporting multiple images",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ProductGallery.tsx",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-right-side-product-information-panel-to-product-detail-page-with-product-name-price-short-description-size-color-selectors-quantity-selector-add-to-cart-button-and-buy-now-button",
+      "featureTitle": "Add right-side product information panel to Product Detail Page with product name, price, short description, size/color selectors, quantity selector, Add to Cart button, and Buy Now button",
+      "files": [
+        "frontend/src/components/ProductInfoPanel.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-tabbed-product-details-section-below-product-info-on-product-detail-page-with-description-specs-and-reviews-tabs",
+      "featureTitle": "Add tabbed product details section below product info on Product Detail Page with Description, Specs, and Reviews tabs",
+      "files": [
+        "frontend/src/components/ProductDetailsTabs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-cart-page-with-product-list-showing-images-quantity-controls-remove-option-and-price-summary-displaying-subtotal-shipping-total-and-checkout-button",
+      "featureTitle": "Create Cart Page with product list showing images, quantity controls, remove option, and price summary displaying subtotal, shipping, total, and checkout button",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CartItem.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/pages/CartPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-checkout-page-ui-with-shipping-address-form-contact-info-section-payment-method-selection-card-upi-paypal-ui-mock-order-summary-panel-and-place-order-button-with-secure-trustworthy-design",
+      "featureTitle": "Create Checkout Page UI with shipping address form, contact info section, payment method selection (Card/UPI/PayPal UI mock), order summary panel, and Place Order button with secure, trustworthy design",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/CheckoutPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-login-page-with-minimal-center-card-containing-email-input-password-input-remember-me-checkbox-and-forgot-password-link",
+      "featureTitle": "Create Login Page with minimal center card containing email input, password input, remember me checkbox, and forgot password link",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/LoginPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-register-page-with-minimal-center-card-containing-full-name-email-password-and-confirm-password-fields",
+      "featureTitle": "Create Register Page with minimal center card containing full name, email, password, and confirm password fields",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/RegisterPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-account-dashboard-with-sidebar-navigation-profile-orders-wishlist-settings-logout-and-main-panel-displaying-order-history-cards-account-details-editing-and-saved-addresses",
+      "featureTitle": "Create Account Dashboard with sidebar navigation (Profile, Orders, Wishlist, Settings, Logout) and main panel displaying order history cards, account details editing, and saved addresses",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/OrderHistory.tsx",
+        "frontend/src/components/ProfileEdit.tsx",
+        "frontend/src/components/WishlistView.tsx",
+        "frontend/src/pages/AccountDashboard.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-mobile-specific-optimizations-collapsible-navbar-bottom-sticky-add-to-cart-on-product-page-larger-touch-friendly-buttons-clean-spacing-and-optimized-layouts-not-scaled-desktop",
+      "featureTitle": "Implement mobile-specific optimizations: collapsible navbar, bottom sticky add-to-cart on product page, larger touch-friendly buttons, clean spacing, and optimized layouts (not scaled desktop)",
+      "files": [
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/ProductDetailPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-apple-inspired-design-system-clean-white-and-soft-gray-base-colors-inter-or-sf-pro-style-typography-maximum-2-3-colors-large-spacing-rounded-corners-soft-shadows-smooth-subtle-animations-perfect-grid-alignment-lots-of-white-space-no-heavy-gradients-no-dark-neon-effects-no-clutter-no-loud-colors",
+      "featureTitle": "Apply Apple-inspired design system: clean white and soft gray base colors, Inter or SF Pro style typography, maximum 2-3 colors, large spacing, rounded corners, soft shadows, smooth subtle animations, perfect grid alignment, lots of white space, no heavy gradients, no dark neon effects, no clutter, no loud colors",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-full-responsive-design-with-separate-optimized-layouts-for-desktop-and-mobile-not-just-scaled-down-maintaining-premium-feel-across-all-breakpoints",
+      "featureTitle": "Ensure full responsive design with separate optimized layouts for desktop and mobile (not just scaled down), maintaining premium feel across all breakpoints",
+      "files": [
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-smooth-hover-effects-and-scroll-animations-throughout-the-site-to-create-fluid-premium-interactions",
+      "featureTitle": "Implement smooth hover effects and scroll animations throughout the site to create fluid, premium interactions",
+      "files": [
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/components/ProductCard.tsx",
+        "frontend/src/hooks/useScrollAnimation.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-organize-code-with-clean-structure-and-well-organized-components-following-react-best-practices",
+      "featureTitle": "Organize code with clean structure and well-organized components following React best practices",
+      "files": [
+        "frontend/src/context/AuthContext.tsx",
+        "frontend/src/context/CartContext.tsx",
+        "frontend/src/types/index.ts",
+        "frontend/src/utils/constants.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-24"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

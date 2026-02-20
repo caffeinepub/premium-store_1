@@ -1,0 +1,553 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Apple-inspired minimal e-commerce website frontend",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create Landing Page with Hero Section featuring large product hero image, headline, subtext, action buttons, and smooth scroll animation",
+      "acceptanceCriteria": [
+        "Hero section displays large product image",
+        "Headline and subtext are prominently displayed",
+        "Both Shop Now and Learn More buttons are functional and styled",
+        "Smooth scroll animation triggers on page load or scroll"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/LandingPage.tsx",
+          "operation": "create",
+          "description": "Create landing page component with hero section displaying the generated hero-headphones.dim_2400x1600.png from frontend/public/assets/generated/, headline 'Designed For The Future.', subtext 'Precision. Performance. Perfection.', Shop Now and Learn More buttons with smooth scroll animation. Wire Featured Products, Why Choose Us, Product Showcase, Customer Reviews, and Newsletter sections below hero."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create hero section component with large product image container, headline and subtext typography, two action buttons (Shop Now navigates to products, Learn More scrolls to product showcase), and smooth fade-in animation on mount. Reference frontend/public/assets/generated/hero-headphones.dim_2400x1600.png as the hero image. Use Tailwind for Apple-inspired minimal styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for LandingPage component at root path '/'. Ensure Router configuration includes navigation to landing page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add Featured Products section with 3-4 large product cards displaying product images, names, and prices",
+      "acceptanceCriteria": [
+        "3-4 product cards are displayed in a clean grid",
+        "Each card shows product image, name, and price",
+        "Cards have hover effects consistent with Apple design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeaturedProducts.tsx",
+          "operation": "create",
+          "description": "Create featured products section with 4 product cards in responsive grid layout. Display generated images: product-smartwatch.dim_2000x2000.png, product-earbuds.dim_2000x2000.png, product-desk-lamp.dim_2000x2000.png, product-accessories.dim_2000x2000.png from frontend/public/assets/generated/. Each card shows product name, price, and subtle hover scale effect. Use Tailwind for minimal Apple-style grid and spacing."
+        },
+        {
+          "path": "frontend/src/components/ProductCard.tsx",
+          "operation": "create",
+          "description": "Create reusable product card component accepting image, name, price as props. Implement smooth hover effect with subtle scale and shadow transitions. Style with rounded corners, soft shadows, and clean typography matching Apple aesthetic."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add Why Choose Us section with 3 minimal icons and short descriptive text for each benefit",
+      "acceptanceCriteria": [
+        "Three benefit items are displayed with icons",
+        "Each item has short, clear text",
+        "Icons are minimal and consistent with Apple aesthetic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/WhyChooseUs.tsx",
+          "operation": "create",
+          "description": "Create benefits section with 3 items in horizontal grid. Use generated icons from frontend/public/assets/generated/: icon-shipping.dim_128x128.png (Fast Shipping), icon-quality.dim_128x128.png (Premium Quality), icon-support.dim_128x128.png (24/7 Support). Each item displays icon, title, and short descriptive text with generous spacing and clean typography."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add Product Showcase section with large left-right layout alternating product images and descriptions",
+      "acceptanceCriteria": [
+        "Large images alternate between left and right sides",
+        "Product descriptions complement each image",
+        "Layout feels spacious and premium"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductShowcase.tsx",
+          "operation": "create",
+          "description": "Create product showcase section with alternating left-right layouts. First row: large product image left, description right. Second row: description left, image right. Use generated product images from frontend/public/assets/generated/. Include generous white space, large typography, and smooth scroll-triggered fade animations. Responsive: stack vertically on mobile."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add Customer Reviews section with minimal review cards displaying customer feedback",
+      "acceptanceCriteria": [
+        "Review cards display customer quotes",
+        "Cards are minimal and clean",
+        "Reviews are easy to read"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/CustomerReviews.tsx",
+          "operation": "create",
+          "description": "Create reviews section with 3 minimal review cards in horizontal grid. Each card displays customer quote, name, and rating stars. Use soft shadows, rounded corners, and clean typography. Responsive: stack vertically on mobile with generous spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add Newsletter Signup section with email input and subscribe button",
+      "acceptanceCriteria": [
+        "Email input field is clearly visible",
+        "Subscribe button is prominently placed",
+        "Section follows minimal design principles"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/NewsletterSignup.tsx",
+          "operation": "create",
+          "description": "Create newsletter section with centered email input and subscribe button. Implement form validation and success message display. Style with minimal Apple aesthetic: clean input with soft border, rounded corners, and prominent CTA button. Add smooth focus transitions."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add Clean Footer with navigation links, social media icons, and policy links",
+      "acceptanceCriteria": [
+        "Footer contains organized navigation links",
+        "Social media icons are present and styled",
+        "Policy links (Privacy, Terms) are included",
+        "Footer design is minimal and clean"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create footer component with four columns: Products, Company, Support, and Legal sections. Include navigation links, social media icons (using lucide-react), and policy links. Style with soft gray background, clean typography, and organized link groups with generous spacing."
+        },
+        {
+          "path": "frontend/src/components/Layout.tsx",
+          "operation": "create",
+          "description": "Create layout wrapper component including Navbar at top and Footer at bottom. Use as wrapper for all pages to ensure consistent navigation and footer across the site."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create Product Listing Page with responsive grid layout displaying product cards with images, names, prices, Add to Cart button, and wishlist heart icon",
+      "acceptanceCriteria": [
+        "Desktop displays 4 columns of products",
+        "Mobile displays 2 columns of products",
+        "Each product card shows image, name, price, Add to Cart button, and wishlist icon",
+        "Grid is perfectly aligned"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ProductListingPage.tsx",
+          "operation": "create",
+          "description": "Create product listing page with responsive grid (4 columns desktop, 2 mobile). Display product cards using generated product images from frontend/public/assets/generated/. Include filters sidebar and sort dropdown. Wire in FiltersSidebar and SortDropdown components."
+        },
+        {
+          "path": "frontend/src/components/ProductGridCard.tsx",
+          "operation": "create",
+          "description": "Create enhanced product card for listing page with product image, name, price, Add to Cart button, and wishlist heart icon. Implement hover zoom effect on image. Add click handlers for cart and wishlist actions with state management. Style with Apple minimal aesthetic."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for ProductListingPage at '/products' path. Ensure navigation from landing page Shop Now button and navbar Products link."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add Filters sidebar with Price, Category, and Rating filter options",
+      "acceptanceCriteria": [
+        "Sidebar contains Price, Category, and Rating filters",
+        "Filters are functional and update product display",
+        "Sidebar is collapsible on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FiltersSidebar.tsx",
+          "operation": "create",
+          "description": "Create collapsible filters sidebar with three sections: Price range slider, Category checkboxes, and Rating star filters. Implement filter state management and emit filter changes to parent. Collapsible drawer on mobile with toggle button. Style with clean borders and generous spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add Sort dropdown with sorting options for products",
+      "acceptanceCriteria": [
+        "Dropdown includes multiple sort options",
+        "Sorting updates product order",
+        "Dropdown is styled consistently with Apple design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SortDropdown.tsx",
+          "operation": "create",
+          "description": "Create sort dropdown component with options: Price Low to High, Price High to Low, Newest, Most Popular. Implement sort state management and emit changes to parent. Style with minimal dropdown design, soft shadows, and smooth transitions."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Implement hover product image zoom effect on Product Listing Page cards",
+      "acceptanceCriteria": [
+        "Product images smoothly zoom on hover",
+        "Zoom effect is subtle and smooth",
+        "Effect works consistently across all product cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductGridCard.tsx",
+          "operation": "modify",
+          "description": "Add CSS transform scale on image hover with smooth transition. Implement overflow hidden on image container to contain zoom effect. Use subtle scale factor (1.05-1.1) for premium feel."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Create Product Detail Page with large left-side product gallery supporting multiple images",
+      "acceptanceCriteria": [
+        "Gallery displays multiple product images",
+        "Main image is large and prominent on the left",
+        "Thumbnail images allow switching between views",
+        "Gallery is responsive"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ProductDetailPage.tsx",
+          "operation": "create",
+          "description": "Create product detail page with two-column layout: left side for product gallery, right side for product info. Wire in ProductGallery and ProductInfoPanel components. Add tabbed details section below. Include mobile sticky add-to-cart bar."
+        },
+        {
+          "path": "frontend/src/components/ProductGallery.tsx",
+          "operation": "create",
+          "description": "Create product gallery component with large main image display and thumbnail strip below. Implement click-to-switch functionality for thumbnails. Use generated product images from frontend/public/assets/generated/ as multiple views. Add smooth fade transitions between images. Responsive: thumbnails scroll horizontally on mobile."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for ProductDetailPage at '/product/:id' path. Ensure product cards link to detail pages with proper product IDs."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Add right-side product information panel with all product details, selectors, and action buttons",
+      "acceptanceCriteria": [
+        "Product name and price are clearly displayed",
+        "Description is concise and readable",
+        "Size and color selectors are functional",
+        "Quantity can be adjusted",
+        "Both action buttons are prominent and functional"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductInfoPanel.tsx",
+          "operation": "create",
+          "description": "Create product info panel with product name, price, short description, size selector (radio buttons), color selector (color swatches), quantity controls (minus/plus buttons), Add to Cart button, and Buy Now button. Implement state management for selections. Style with generous spacing and clean typography."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Add tabbed product details section with Description, Specs, and Reviews tabs",
+      "acceptanceCriteria": [
+        "Three tabs are visible: Description, Specs, Reviews",
+        "Tab switching is smooth and functional",
+        "Each tab displays relevant content",
+        "Tab design is minimal and clean"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductDetailsTabs.tsx",
+          "operation": "create",
+          "description": "Create tabbed interface with three tabs: Description, Specs, Reviews. Implement tab state management and smooth content transitions. Style tabs with minimal underline indicator and clean typography. Each tab content section displays relevant product information with generous spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Create Cart Page with product list, quantity controls, remove option, and price summary",
+      "acceptanceCriteria": [
+        "Each cart item displays product image and details",
+        "Quantity can be adjusted per item",
+        "Items can be removed from cart",
+        "Price summary shows subtotal, shipping, and total",
+        "Checkout button is prominent"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CartPage.tsx",
+          "operation": "create",
+          "description": "Create cart page with two-column layout: left column for cart items list, right column for price summary. Wire in CartItem component for each product. Include subtotal, shipping, total calculations, and prominent Checkout button. Show empty cart state with continue shopping link."
+        },
+        {
+          "path": "frontend/src/components/CartItem.tsx",
+          "operation": "create",
+          "description": "Create cart item component displaying product image, name, selected options (size/color), price, quantity controls (minus/plus), and remove button. Implement quantity update and remove handlers. Style with clean borders and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create navigation bar with logo, navigation links (Home, Products, Account), and cart icon with item count badge. Implement mobile hamburger menu. Style with transparent/white background, minimal design, and smooth scroll behavior. Ensure cart icon links to cart page."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for CartPage at '/cart' path. Ensure cart icon in navbar links to cart page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Create Checkout Page UI with shipping form, contact info, payment method selection, order summary, and Place Order button",
+      "acceptanceCriteria": [
+        "Shipping form collects all necessary address fields",
+        "Contact info section is clear",
+        "Payment method options are displayed (UI only)",
+        "Order summary shows items and totals",
+        "Place Order button is prominent and trustworthy",
+        "Overall design conveys security"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CheckoutPage.tsx",
+          "operation": "create",
+          "description": "Create checkout page with two-column layout: left column for shipping address form, contact info, and payment method selection UI mock (Card/UPI/PayPal radio options), right column for order summary panel with cart items and totals. Include prominent Place Order button. Add security badges and lock icons to convey trustworthiness. Implement form validation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for CheckoutPage at '/checkout' path. Ensure checkout button in cart page navigates to checkout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Create Login Page with minimal center card containing email input, password input, remember me checkbox, and forgot password link",
+      "acceptanceCriteria": [
+        "Login form is centered in a minimal card",
+        "Email and password fields are present",
+        "Remember me checkbox is functional",
+        "Forgot password link is visible",
+        "Design is clean and minimal"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/LoginPage.tsx",
+          "operation": "create",
+          "description": "Create login page with centered minimal card containing email input, password input, remember me checkbox, forgot password link, login button, and link to register page. Implement form validation. Style with soft shadows, rounded corners, and clean typography."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for LoginPage at '/login' path. Ensure navbar Account link navigates to login when not authenticated."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Create Register Page with minimal center card containing full name, email, password, and confirm password fields",
+      "acceptanceCriteria": [
+        "Registration form is centered in a minimal card",
+        "All four fields are present and functional",
+        "Password confirmation validation works",
+        "Design matches login page aesthetic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/RegisterPage.tsx",
+          "operation": "create",
+          "description": "Create register page with centered minimal card containing full name, email, password, confirm password inputs, register button, and link to login page. Implement form validation including password match check. Style consistently with login page using soft shadows and clean typography."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for RegisterPage at '/register' path. Ensure login page includes link to register page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Create Account Dashboard with sidebar navigation and main panel displaying order history, account details, and saved addresses",
+      "acceptanceCriteria": [
+        "Sidebar contains all five navigation items",
+        "Main panel switches content based on sidebar selection",
+        "Order history displays as cards",
+        "Account details can be edited",
+        "Saved addresses are manageable",
+        "Dashboard is clean and organized"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AccountDashboard.tsx",
+          "operation": "create",
+          "description": "Create account dashboard with sidebar navigation (Profile, Orders, Wishlist, Settings, Logout) and main content panel. Implement tab switching for different sections. Wire in OrderHistory, ProfileEdit, WishlistView, and SettingsPanel components based on active tab."
+        },
+        {
+          "path": "frontend/src/components/OrderHistory.tsx",
+          "operation": "create",
+          "description": "Create order history component displaying order cards with order number, date, items, total, and status. Each card shows product thumbnails and allows viewing order details. Style with clean cards and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/ProfileEdit.tsx",
+          "operation": "create",
+          "description": "Create profile editing component with form for name, email, phone, and saved addresses management. Include add/edit/delete functionality for addresses. Implement form validation and save handlers."
+        },
+        {
+          "path": "frontend/src/components/WishlistView.tsx",
+          "operation": "create",
+          "description": "Create wishlist view displaying saved products in grid layout. Each item shows product image, name, price, and options to move to cart or remove. Style consistently with product grid."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for AccountDashboard at '/account' path. Ensure navbar Account link navigates to dashboard when authenticated."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Implement mobile-specific optimizations: collapsible navbar, bottom sticky add-to-cart, larger touch-friendly buttons, clean spacing, and optimized layouts",
+      "acceptanceCriteria": [
+        "Mobile navbar collapses into hamburger menu",
+        "Product detail page has sticky add-to-cart at bottom on mobile",
+        "All buttons are larger and touch-friendly on mobile",
+        "Mobile layouts are optimized, not just scaled",
+        "Spacing is generous on mobile",
+        "No elements feel cramped"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Implement hamburger menu for mobile with slide-in drawer navigation. Add mobile breakpoint styles with larger touch targets. Ensure smooth open/close animations."
+        },
+        {
+          "path": "frontend/src/pages/ProductDetailPage.tsx",
+          "operation": "modify",
+          "description": "Add fixed bottom bar for mobile displaying Add to Cart and Buy Now buttons. Show on scroll when product info panel is off-screen. Style with shadow and clean borders."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add mobile-specific utility classes for touch-friendly buttons (min 44px height), generous spacing (larger padding on mobile), and optimized mobile layouts. Ensure all interactive elements meet touch target minimums."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Apply Apple-inspired design system with clean colors, premium typography, large spacing, rounded corners, soft shadows, and subtle animations",
+      "acceptanceCriteria": [
+        "Color palette uses white and soft gray as base",
+        "Typography uses Inter or SF Pro font family",
+        "Maximum of 2-3 colors used throughout",
+        "Generous spacing between all elements",
+        "All corners are rounded consistently",
+        "Shadows are soft and subtle",
+        "Grid alignment is perfect across all layouts",
+        "Animations are smooth and subtle",
+        "Design feels spacious with ample white space",
+        "No gradients, neon effects, or loud colors present"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define Apple-inspired design system: CSS variables for white, soft gray (#F5F5F7), and one accent color. Set Inter font family. Define reusable classes for rounded corners (rounded-xl, rounded-2xl), soft shadows (shadow-sm, shadow-md), generous spacing utilities, and smooth transition defaults. Ensure no gradients or loud colors."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind theme with Apple-inspired design tokens: Inter font family, custom color palette (white, soft gray, one accent), consistent border radius values, soft shadow definitions, and generous spacing scale. Set default transition timing for smooth animations."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Ensure full responsive design with separate optimized layouts for desktop and mobile maintaining premium feel across all breakpoints",
+      "acceptanceCriteria": [
+        "All pages are fully responsive",
+        "Desktop layouts are optimized for large screens",
+        "Mobile layouts are uniquely designed, not scaled",
+        "Tablet breakpoints are handled appropriately",
+        "Premium feel is maintained on all devices"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add responsive utility classes for mobile-first breakpoints (sm, md, lg, xl). Define mobile-specific layouts that differ from desktop (stack vs grid, different spacing). Ensure generous white space on all breakpoints. Test all components at 375px, 768px, 1024px, and 1440px widths."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Implement smooth hover effects and scroll animations throughout the site to create fluid, premium interactions",
+      "acceptanceCriteria": [
+        "All interactive elements have smooth hover effects",
+        "Scroll animations are subtle and enhance experience",
+        "Animations feel natural and not distracting",
+        "Performance remains smooth with animations enabled"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useScrollAnimation.ts",
+          "operation": "create",
+          "description": "Create custom React hook for scroll-triggered animations using Intersection Observer. Support fade-in, slide-up, and scale effects with configurable thresholds and delays. Return visibility state and ref for component attachment."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Add fade-in animation on mount using CSS transitions or Framer Motion. Implement smooth scroll behavior for Learn More button."
+        },
+        {
+          "path": "frontend/src/components/ProductCard.tsx",
+          "operation": "modify",
+          "description": "Add hover effects: subtle scale transform, shadow elevation, and opacity changes on interactive elements. Use smooth transitions (300ms ease-in-out)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-24",
+      "summary": "Organize code with clean structure and well-organized components following React best practices",
+      "acceptanceCriteria": [
+        "Components are properly separated and reusable",
+        "File structure is logical and maintainable",
+        "Code follows React best practices",
+        "Component naming is clear and consistent"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/context/CartContext.tsx",
+          "operation": "create",
+          "description": "Create React Context for global cart state management. Provide cart items array, add/remove/update functions, and total calculations. Use local storage for persistence."
+        },
+        {
+          "path": "frontend/src/context/AuthContext.tsx",
+          "operation": "create",
+          "description": "Create React Context for authentication state (user, isAuthenticated). Provide login, logout, and register functions. Use local storage for session persistence."
+        },
+        {
+          "path": "frontend/src/types/index.ts",
+          "operation": "create",
+          "description": "Define TypeScript interfaces for Product, CartItem, User, Order, Address, and Review. Ensure type safety across all components."
+        },
+        {
+          "path": "frontend/src/utils/constants.ts",
+          "operation": "create",
+          "description": "Define application constants: mock product data with references to generated images from frontend/public/assets/generated/, category options, shipping costs, and configuration values."
+        }
+      ]
+    }
+  ]
+}
